@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+
+    <script>
+        var input = document.getElementById("input");
+
+        input.addEventListener("keyup", function(e) { //Se ejecuta el evento cada vez que se pulsa una tecla.
+            var codigoTecla = e.keyCode || e.which; //Se almacena el codigo de tecla.
+            if (codigoTecla == 13) { //Se verifica si el codigo de tecla corresponde al "Enter".
+                alert("Apretaste Enter!");
+            }
+        });
+    </script>
+</body>
+</html>
